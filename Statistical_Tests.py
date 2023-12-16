@@ -4,7 +4,7 @@ from scipy.stats import chi2_contingency, f_oneway
 file_path = r"C:\Users\Tathagata\Downloads\208.csv"
 df = pd.read_csv(file_path)
 
-chi2, p, _, _ = chi2_contingency(pd.crosstab(df['Area Code'], columns='count'))
+chi2, p, dof, expected = chi2_contingency(pd.crosstab(df['Area Code'], columns='count'))
 
 print(f"Chi-square statistic: {chi2}")
 print(f"P-value: {p}")
