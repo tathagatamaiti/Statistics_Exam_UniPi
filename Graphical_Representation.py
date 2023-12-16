@@ -2,7 +2,7 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-file_path = r"C:\Users\Tathagata\Downloads\208.csv"
+file_path = r"C:\Users\Tathagata\PycharmProjects\Statistics_Exam_UniPi\208.csv"
 df = pd.read_csv(file_path)
 
 plt.figure(figsize=(16, 8))

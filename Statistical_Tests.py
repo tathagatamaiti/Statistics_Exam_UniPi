@@ -1,7 +1,7 @@
 import pandas as pd
 from scipy.stats import chi2_contingency, f_oneway
 
-file_path = r"C:\Users\Tathagata\Downloads\208.csv"
+file_path = r"C:\Users\Tathagata\PycharmProjects\Statistics_Exam_UniPi\208.csv"
 df = pd.read_csv(file_path)
 
 chi2, p, dof, expected = chi2_contingency(pd.crosstab(df['Area Code'], columns='count'))
